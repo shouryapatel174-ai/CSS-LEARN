@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Backgrounds</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f8fafc;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+            padding: 40px 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            text-align: center;
+            color: white;
+        }
+
+        .solid {
+            background-color: #2563eb;
+        }
+
+        .image {
+            background-image:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.4),
+                    rgba(0, 0, 0, 0.4)
+                ),
+                url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1000");
+
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>CSS Backgrounds</h1>
+
+<div class="box solid">
+    Solid Background Color
+</div>
+
+<div class="box image">
+    Background Image
+</div>
+
+</body>
+</html>
